@@ -10,8 +10,7 @@
 #viewのhtml.erbで処理
 
 Rails.application.routes.draw do
-  get 'posts', to: 'posts#index'    #rocalhost3000/postsがココ    #は司令
-  get 'posts/new', to: 'posts#new'  #rocalhost3000/newがココ
+  root to: 'posts#index'
   post 'posts', to: 'posts#create'  #rocalhost3000/createがココ(行き先で戻る処理を書く)
 end
 

@@ -11,7 +11,9 @@
 
 Rails.application.routes.draw do
   root to: 'posts#index'
-  post 'posts', to: 'posts#create'  #rocalhost3000/createがココ(行き先で戻る処理を書く)
+  post 'posts', to: 'posts#create'  
+  get 'posts/:id', to: 'posts#checked'
+
 end
 
 
